@@ -153,13 +153,13 @@ function calculateGrandTotal() {
             document.getElementById("discount").value
         ) || 0;
 
-    let plumberCharge =
+    let fareCharge =
         parseFloat(
-            document.getElementById("plumberCharge").value
+            document.getElementById("fareCharge").value
         ) || 0;
 
     let grandTotal =
-        totalAmount - discount + plumberCharge;
+        totalAmount - discount + fareCharge;
 
     document.getElementById("grandTotal").innerText =
         grandTotal.toFixed(2);
@@ -178,7 +178,7 @@ document
     );
 
 document
-    .getElementById("plumberCharge")
+    .getElementById("fareCharge")
     .addEventListener(
         "input",
         calculateGrandTotal
