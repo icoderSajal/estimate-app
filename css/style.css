@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 3px solid #0b67c2;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.company-info h1 {
+    color: #0b67c2;
+    font-size: 32px;
+}
+
+.company-info p {
+    margin-top: 5px;
+    color: #444;
+}
+
+.customer-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background: #0b67c2;
+    color: white;
+    padding: 12px;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.add-btn {
+    background: #ff9800;
+}
+
+.pdf-btn {
+    background: #0b67c2;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calculation-section {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.calc-box label {
+    margin-bottom: 8px;
+}
+
+.calc-box input {
+    border: 2px solid #0b67c2;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.total-box {
+    margin-top: 25px;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #0b67c2;
+}
+
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+@media(max-width:768px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+}
+
+@media print {
+
+    .btn,
+    .delete-btn {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .container {
+        box-shadow: none;
+    }
+
+}
