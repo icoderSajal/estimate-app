@@ -11,7 +11,7 @@ function addRow() {
         <td>
 
             <select>
-
+                <option>Ashirvad</option>
                 <option>Apollo</option>
 
                 <option>Birla</option>
